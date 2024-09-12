@@ -1,7 +1,7 @@
 "use client";
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
-import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai'; 
+import { AiOutlineMenu, AiOutlineClose } from 'react-icons/ai';
 
 const Navbar = () => {
   const [isOpen, setIsOpen] = useState(false);
@@ -36,7 +36,7 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="w-full fixed top-0 z-50 bg-white shadow-md">
+    <nav className="w-full  top-0 z-50 bg-white shadow-md">
       <div className="flex items-center justify-between px-6 md:px-20 py-4">
     
         <div className="flex items-center">
@@ -59,7 +59,7 @@ const Navbar = () => {
         {/* Desktop navigation */}
         <div className={`hidden md:flex md:items-center space-x-48 text-gray-700 text-xl`}>
           <a
-            href="#home"
+            href="/"
             onClick={() => setActiveSection('home')}
             className={`hover:text-blue-600 ${activeSection === 'home' ? 'text-blue-600 font-bold' : 'font-normal'}`}
           >
@@ -94,7 +94,7 @@ const Navbar = () => {
         className={`fixed top-0 left-0 w-full h-full bg-gray-900 bg-opacity-90 z-40 flex flex-col items-center justify-center space-y-8 text-white transform transition-transform duration-300 ease-in-out ${isOpen ? 'translate-x-0' : '-translate-x-full'} md:hidden`}
       >
         <a
-          href="#home"
+          href="/"
           onClick={() => { setIsOpen(false); setActiveSection('home'); }}
           className={`text-2xl hover:text-blue-600 ${activeSection === 'home' ? 'text-blue-600 font-bold' : 'font-semibold'}`}
         >
