@@ -8,7 +8,7 @@ const Landingpage = () => {
       <Image src="/images/landing.png" alt="Landing Image" layout="fill" objectFit="cover" />
 
       <div className="absolute inset-0 flex flex-col justify-center items-center text-yellow-500 text-center px-4">
-        <p className="text-[64px] font-extrabold mb-8 px-4 md:px-12 lg:px-20 text-center max-w-[1200px] text-customYellow font-nunito">
+        <p className="text-[48px] md:text-[64px] font-extrabold mb-8 px-4 md:px-12 lg:px-20 text-center max-w-[1200px] text-customYellow font-nunito">
           Empower Your Financial <br /> Future with Investika
         </p>
 

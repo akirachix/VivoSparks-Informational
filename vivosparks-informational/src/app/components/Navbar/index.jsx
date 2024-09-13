@@ -13,7 +13,7 @@ const Navbar = () => {
 
   useEffect(() => {
     const handleScroll = () => {
-      const sections = ['home', 'about', 'features', 'overview'];
+      const sections = ['home', 'about', 'characters', 'features', 'overview', 'contacts'];
       const sectionOffsets = sections.map((section) =>
         document.getElementById(section)?.offsetTop ?? 0
       );
@@ -36,8 +36,8 @@ const Navbar = () => {
   }, []);
 
   return (
-    <nav className="w-full  top-0 z-50 bg-white shadow-md">
-      <div className="flex items-center justify-between px-6 md:px-20 py-4">
+    <nav className="w-full top-0 z-50 bg-white shadow-md">
+      <div className="flex items-center justify-between px-6 sm:px-10 md:px-20 py-4">
     
         <div className="flex items-center">
           <Image
@@ -50,14 +50,14 @@ const Navbar = () => {
         </div>
 
         {/* Mobile menu toggle */}
-        <div className="md:hidden flex items-center z-50">
+        <div className="lg:hidden flex items-center z-50">
           <button onClick={toggleMenu} className="focus:outline-none">
             {isOpen ? <AiOutlineClose size={30} color="white" /> : <AiOutlineMenu size={30} color="black" />}
           </button>
         </div>
 
         {/* Desktop navigation */}
-        <div className={`hidden md:flex md:items-center space-x-48 text-gray-700 text-xl`}>
+        <div className={`hidden lg:flex lg:items-center space-x-12 text-gray-700 text-xl`}>
           <a
             href="/"
             onClick={() => setActiveSection('home')}
@@ -73,6 +73,13 @@ const Navbar = () => {
             About
           </a>
           <a
+            href="#characters"
+            onClick={() => setActiveSection('characters')}
+            className={`hover:text-blue-600 ${activeSection === 'characters' ? 'text-blue-600 font-bold' : 'font-normal'}`}
+          >
+            Characters
+          </a>
+          <a
             href="#features"
             onClick={() => setActiveSection('features')}
             className={`hover:text-blue-600 ${activeSection === 'features' ? 'text-blue-600 font-bold' : 'font-normal'}`}
@@ -86,12 +93,19 @@ const Navbar = () => {
           >
             Overview
           </a>
+          <a
+            href="#contacts"
+            onClick={() => setActiveSection('contacts')}
+            className={`hover:text-blue-600 ${activeSection === 'contacts' ? 'text-blue-600 font-bold' : 'font-normal'}`}
+          >
+            Contacts
+          </a>
         </div>
       </div>
 
       {/* Full-Screen for hamburger menu */}
       <div
-        className={`fixed top-0 left-0 w-full h-full bg-gray-900 bg-opacity-90 z-40 flex flex-col items-center justify-center space-y-8 text-white transform transition-transform duration-300 ease-in-out ${isOpen ? 'translate-x-0' : '-translate-x-full'} md:hidden`}
+        className={`fixed top-0 left-0 w-full h-full bg-gray-900 bg-opacity-90 z-40 flex flex-col items-center justify-center space-y-8 text-white transform transition-transform duration-300 ease-in-out ${isOpen ? 'translate-x-0' : '-translate-x-full'} lg:hidden`}
       >
         <a
           href="/"
@@ -108,6 +122,13 @@ const Navbar = () => {
           About
         </a>
         <a
+          href="#characters"
+          onClick={() => { setIsOpen(false); setActiveSection('characters'); }}
+          className={`text-2xl hover:text-blue-600 ${activeSection === 'characters' ? 'text-blue-600 font-bold' : 'font-semibold'}`}
+        >
+          Characters
+        </a>
+        <a
           href="#features"
           onClick={() => { setIsOpen(false); setActiveSection('features'); }}
           className={`text-2xl hover:text-blue-600 ${activeSection === 'features' ? 'text-blue-600 font-bold' : 'font-semibold'}`}
@@ -120,6 +141,13 @@ const Navbar = () => {
           className={`text-2xl hover:text-blue-600 ${activeSection === 'overview' ? 'text-blue-600 font-bold' : 'font-semibold'}`}
         >
           Overview
+        </a>
+        <a
+          href="#contacts"
+          onClick={() => { setIsOpen(false); setActiveSection('contacts'); }}
+          className={`text-2xl hover:text-blue-600 ${activeSection === 'contacts' ? 'text-blue-600 font-bold' : 'font-semibold'}`}
+        >
+          Contacts
         </a>
       </div>
     </nav>
