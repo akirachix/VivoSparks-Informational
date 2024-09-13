@@ -11,9 +11,19 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+        customYellow: '#F8BD00', 
+        customBlue: '#50acea',   
+        customDarkBlue: '#003566', 
+      },
+      fontFamily: {
+        nunito: ['Nunito', 'sans-serif'], 
+      },
+      borderRadius: {
+        custom: '20px', 
       },
     },
   },
   plugins: [],
 };
+
 export default config;

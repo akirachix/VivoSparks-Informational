@@ -2,7 +2,7 @@ import Image from "next/image";
 
 export default function Characters() {
   return (
-    <div className="nunito">
+    <div id="characters" className="nunito">
       <div className="text-center">
         <h1
           className="font-extrabold mt-8 text-blue-600 text-4xl sm:text-4xl md:text-4xl lg:text-4xl xl:text-[50px]">
