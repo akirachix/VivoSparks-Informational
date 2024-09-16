@@ -2,7 +2,7 @@ import Image from 'next/image';
 
 const Features = () => {
   return (
-    <div className="w-full py-12 px-5 bg-white font-nunito">
+    <div id="features" className="w-full py-12 px-5 bg-white font-nunito">
       <div className="w-full mx-auto">
         <h1 className="text-3xl md:text-5xl font-extrabold text-center mb-12 text-customTextBlue font-nunito">
           Discover What Awaits You

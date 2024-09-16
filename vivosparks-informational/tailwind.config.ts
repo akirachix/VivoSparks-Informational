@@ -11,10 +11,12 @@ const config: Config = {
       colors: {
         background: "var(--background)",
         foreground: "var(--foreground)",
+
         customYellow: '#F8BD00',
         customBlue: '#50acea',
         customDarkBlue: '#003566',
         customTextBlue: '#1573B2',
+        
       },
       fontFamily: {
         nunito: ['Nunito', 'sans-serif'],
@@ -24,7 +26,11 @@ const config: Config = {
       },
       screens: {
         'md': '913px',
+
+     
       },
+     
+      
     },
   },
   plugins: [],
