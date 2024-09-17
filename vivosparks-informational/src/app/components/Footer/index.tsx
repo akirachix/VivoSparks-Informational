@@ -7,7 +7,7 @@ import Link from 'next/link';
 
 const Footer = () => {
 
-  const handleScroll = (sectionId) => {
+  const handleScroll = (sectionId: string) => {
     document.getElementById(sectionId)?.scrollIntoView({ behavior: 'smooth' });
   };
 
