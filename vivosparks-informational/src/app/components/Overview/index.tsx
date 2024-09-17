@@ -15,7 +15,7 @@ const Overview = () => {
         </div>
 
         <div className="flex justify-start lg:min-h-fit mt-10 lg:mt-0 lg:w-1/2 md:mt-8 md:pl-6 overflow-hidden nest-hub:pt-2 nest-hub-max:pt-3">
-          <div className="nest-hub:mr-5 nest-hub-max:mr-4 nest-hub:mt-11 nest-hub-max:mt-20">
+          <div className="nest-hub:mr-5 nest-hub-max:mr-4 nest-hub:mt-11 nest-hub-max:mt-40 nest-hub-max:w-[620px]" >
             <Image
               src="/Images/investment.png"
               alt="Empowering Financial Future"
