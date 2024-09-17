@@ -25,7 +25,7 @@ const Features = () => {
             </h2>
             <p className="mt-3 text-black text-lg  px-5">
               We make gaining financial advice an exciting part of your adventure! Through interactive quests,
-              you'll learn essential concepts like stocks, and risk management in a fun way.
+              you&apos;ll learn essential concepts like stocks, and risk management in a fun way.
             </p>
           </div>
 
@@ -43,7 +43,7 @@ const Features = () => {
             </h2>
             <p className="mt-3 text-black text-lg px-5">
               We bring real market insights to life in a fun and engaging manner! Through dynamic game features,
-              you'll explore interactive challenges that simulate real market scenarios.
+              you&apos;ll explore interactive challenges that simulate real market scenarios.
             </p>
           </div>
 
