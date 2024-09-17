@@ -37,7 +37,7 @@ jobs:
         working-directory: ./vivosparks-informational
         run: npm run build
 
-  # Define the deploy job
+  
   deploy:
     runs-on: ubuntu-latest
     needs: build
