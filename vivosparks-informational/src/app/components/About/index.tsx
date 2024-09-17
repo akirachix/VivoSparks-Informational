@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const About = () => {
     return (
-        <div className='flex flex-col md:flex-row justify-around px-4 lg:px-24 mt-20 md:px-5 nest-hub:px-4 mt-6nest-hub-max:px-4'>
+        <div id='about' className='flex flex-col md:flex-row justify-around px-4 lg:px-24 mt-20 md:px-5 nest-hub:px-4 mt-6nest-hub-max:px-4'>
             <div className="lg:w-1/2 w-full lg:pr-6 flex flex-col md:m-12%] mt-20">
                 <h1 className="text-4xl lg:text-5xl font-bold text-[#001d3d] mt-4 font-nunito text-center lg:text-left nest-hub:leading-tight nest-hub:mt-2 nest-hub:text-2xl nest-hub-max:leading-loose nest-hub-max:mt-10 nest-hub-max:text-3xl ml-3">
                     Fun. Entertaining. Amusing
