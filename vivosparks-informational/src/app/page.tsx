@@ -15,7 +15,7 @@ export default function Home() {
       <About/>
       <Characters/>
       <Features/>
-      <Overview/><br/><br/>
+      <Overview/>
       <Footer/>
       
       </div>

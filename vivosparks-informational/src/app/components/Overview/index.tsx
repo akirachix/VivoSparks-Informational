@@ -3,7 +3,7 @@ import Image from 'next/image';
 
 const Overview = () => {
   return (
-    <div id='overview' className="px-[20px]">
+    <div id='overview' className="px-[20px] mb-10">
       <div className="flex flex-col md:flex-row justify-around mt-20">
         <div className="lg:w-1/2 w-full flex flex-col md:m-12 nest-hub:mx-4 nest-hub-max:mx-4 lg:mt-[10%]">
           <h1 className="text-4xl lg:text-5xl font-bold text-[#1573B2] mt-4 font-nunito text-center lg:text-left nest-hub:leading-tight nest-hub:mt-2 nest-hub:text-2xl nest-hub-max:leading-loose nest-hub-max:mt-2 nest-hub-max:text-3xl ml-3">
@@ -19,9 +19,9 @@ const Overview = () => {
             <Image
               src="/Images/investment.png"
               alt="Empowering Financial Future"
-              width={1000}
+              width={800}
               height={400}
-              className=" rounded-2xl object-cover sm:w-[755px] nest-hub:w-[800px] nest-hub-max:rounded-3xl nest-hub:h-[450px] nest-hub:rounded-3xl ipad-air:px-1 ipad-air:ml-2.5 nest-hub-max:w-[800px] nest-hub-max:h-[500px] sm:-ml-0"
+              className=" rounded-2xl object-cover sm:w-[755px] nest-hub:w-[800px] nest-hub-max:rounded-3xl nest-hub:h-[450px] nest-hub:rounded-3xl ipad-air:px-1 ipad-air:ml-2.5 nest-hub-max:w-[800px] nest-hub-max:h-[300px] sm:-ml-0"
             />
           </div>
         </div>
