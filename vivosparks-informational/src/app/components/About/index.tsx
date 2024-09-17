@@ -1,6 +1,5 @@
 import Image from 'next/image';
 
-
 const About = () => {
     return (
         <div id='about' className='flex flex-col md:flex-row justify-around px-4 lg:px-24 mt-20 md:px-5 nest-hub:px-4 mt-6nest-hub-max:px-4'>
@@ -17,11 +16,10 @@ const About = () => {
                 </p>
                 <p className="text-lg lg:text-2xl mt-10 leading-loose lg:leading-loose font-nunito text-justify lg:text-left px-2 nest-hub:leading-normal nest-hub:mt-8 nest-hub:text-xl nest-hub-max:leading-loose nest-hub-max:mt-10 nest-hub-max:text-xl sm:text-2xl">
                     Imagine navigating through vibrant landscapes filled with challenges, quests, and surprises as you learn
-                    how to build your wealth. With every decision, you'll unlock new skills, discover exciting investment
+                    how to build your wealth. With every decision, you&apos;ll unlock new skills, discover exciting investment
                     opportunities, and gather rewards that boost your financial process.
                 </p>
             </div>
-
 
             <div className="flex justify-center lg:justify-end min-h-fit mt-10 lg:mt-0 lg:w-1/2 md:mt-8 md:pl-6 overflow-hidden nest-hub:pt-2 nest-hub-max:pt-2">
                 <Image
@@ -32,10 +30,8 @@ const About = () => {
                     className="rounded-lg object-cover sm:w-[755px] nest-hub:w-[800px] nest-hub:h-[450px] nest-hub-max:w-[1000px] nest-hub-max:h-[500px] nest-hub:rounded-[40px] nest-hub-max:rounded-[40px] mt-20"
                 />
             </div>
-
         </div>
     );
 };
-
 
 export default About;

@@ -21,7 +21,7 @@ export default function Characters() {
           backgroundSize: "cover",
           backgroundPosition: "center",
           minHeight: "100vh",
-        }}w-full
+        }}
       >
         <div className="text-center mt-24">
           <h1
@@ -43,9 +43,11 @@ export default function Characters() {
               className="text-center mt-12 flex flex-col items-center w-full sm:w-auto"
               style={{ maxWidth: "350px", margin: "20px" }}
             >
-              <img
+              <Image
                 src={`/images/${character}.png`}
                 alt={character}
+                width={288}  // Adjust dimensions to match your layout
+                height={288} // Adjust dimensions to match your layout
                 className="object-cover w-32 h-32 sm:w-40 sm:h-40 md:w-52 md:h-52 lg:w-64 lg:h-64 xl:w-72 xl:h-72 rounded-full mx-auto"
               />
               <h3
