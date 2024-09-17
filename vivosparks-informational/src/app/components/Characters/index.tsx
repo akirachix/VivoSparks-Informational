@@ -46,8 +46,8 @@ export default function Characters() {
               <Image
                 src={`/images/${character}.png`}
                 alt={character}
-                width={288}  // Adjust dimensions to match your layout
-                height={288} // Adjust dimensions to match your layout
+                width={288}  
+                height={288} 
                 className="object-cover w-32 h-32 sm:w-40 sm:h-40 md:w-52 md:h-52 lg:w-64 lg:h-64 xl:w-72 xl:h-72 rounded-full mx-auto"
               />
               <h3
